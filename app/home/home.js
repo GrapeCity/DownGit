@@ -30,7 +30,7 @@ homeModule.config([
                     $scope.downloadedFiles = {val: 0};
                     $scope.totalFiles = {val: 0};
 
-                    var templateUrl = "https?://github.com/GrapeCity/.+/.+";
+                    var templateUrl = /^https?:\/\/github\.com\/GrapeCity\/.+\/.+/gmi;
                     var downloadUrlInfix = "#/home?url=";
                     var downloadUrlPrefix = "https://grapecity.github.io/DownGit/"+downloadUrlInfix;
 
